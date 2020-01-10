@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ </head>
+ <body>
+   
+   <script>
+       function setup(id) {
+        $("#"+id).hide();
+       }
+     
+       document.body.innerHTML = `
+        <div id="image1" class="image">
+         <img  src="https://goo.gl/kjzfbE" alt="First">
+         <button onclick="setup('image1')" class="remove">X</button>
+        </div>
+        <div id="image2" class="image">
+         <img src="https://goo.gl/d2JncW" alt="Second">
+         <button onclick="setup('image2')" class="remove">X</button>
+        </div>`;
+       setup();
+   </script>
+ </body>
+</html>
